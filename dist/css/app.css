@@ -374,20 +374,29 @@ table {
   border-spacing: 0;
 }
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 .main-container {
   padding: 80px 0 0 0;
-}
-.main-container:after {
-  content: "";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 input[type="text"] {
@@ -794,16 +803,21 @@ footer a:hover {
 }
 
 .item {
-  display: table;
-  float: left;
-  width: 20%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 20%;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
   height: 100px;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.item__inner {
-  display: table-cell;
-  vertical-align: middle;
-}
 .item__inner p {
   margin: .3em 0;
 }
@@ -824,17 +838,23 @@ footer a:hover {
 
 @media all and (max-width: 768px) {
   .item {
-    width: 25%;
+    -webkit-flex: 1 0 25%;
+        -ms-flex: 1 0 25%;
+            flex: 1 0 25%;
   }
 }
 @media all and (max-width: 600px) {
   .item {
-    width: 50%;
+    -webkit-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
   }
 }
 @media all and (max-width: 480px) {
   .item {
-    float: none;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
     width: 100%;
     height: 70px;
   }

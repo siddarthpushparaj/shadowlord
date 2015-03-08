@@ -24,9 +24,12 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-        'src/javascripts/vendor/neon.js',
-        'src/javascripts/vendor/neon-stdlib/**',
-        'src/javascripts/vendor/values.min.js',
+        'bower_components/neon/neon.js',
+        'bower_components/neon/stdlib/node_support.js',
+        'bower_components/neon/stdlib/custom_event.js',
+        'bower_components/neon/stdlib/custom_event_support.js',
+        'bower_components/neon/stdlib/node_support.js',
+        'bower_components/values.js/index.js',
         'src/javascripts/lib/**',
         'src/javascripts/ui/**',
         'src/javascripts/app/**',
