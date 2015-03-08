@@ -135,7 +135,6 @@ dfn {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -317,8 +316,7 @@ html input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -332,7 +330,6 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -378,8 +375,7 @@ table {
 }
 
 * {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .main-container {
@@ -436,8 +432,7 @@ a:hover {
 .preview__color {
   border-color: rgba(243, 243, 243, 0.75);
   border-radius: 4px;
-  -webkit-transition: background-color 400ms ease;
-          transition: background-color 400ms ease;
+  transition: background-color 400ms ease;
 }
 
 [name="input"] {
@@ -695,8 +690,7 @@ footer a {
   color: #fff;
   border-radius: 3px;
   opacity: .8;
-  -webkit-transition: opacity 250ms;
-          transition: opacity 250ms;
+  transition: opacity 250ms;
 }
 footer a:hover {
   color: #fff;
@@ -711,8 +705,7 @@ footer a:hover {
   outline: none;
   border-style: solid;
   border-radius: 2px;
-  -webkit-transition: color 250ms ease, background-color 250ms ease;
-          transition: color 250ms ease, background-color 250ms ease;
+  transition: color 250ms ease, background-color 250ms ease;
 }
 .btn.borderless {
   border-style: none;
@@ -773,8 +766,7 @@ footer a:hover {
   background-color: rgba(59, 74, 76, 0.1);
   color: rgba(59, 74, 76, 0.7);
   border-radius: 3px;
-  -webkit-transition: background-color 250ms ease;
-          transition: background-color 250ms ease;
+  transition: background-color 250ms ease;
 }
 .checkbox-wrapper .checkbox-ui:after {
   content: "\2713";
@@ -782,8 +774,8 @@ footer a:hover {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: -webkit-transform 250ms ease, opacity 250ms ease;
-          transition: transform 250ms ease, opacity 250ms ease;
+  transition: -webkit-transform 250ms ease, opacity 250ms ease;
+  transition: transform 250ms ease, opacity 250ms ease;
 }
 .checkbox-wrapper .checkbox-label {
   color: #688285;
@@ -849,19 +841,16 @@ footer a:hover {
 }
 .item {
   background-color: transparent;
-  -webkit-transition: background-color 400ms ease;
-          transition: background-color 400ms ease;
+  transition: background-color 400ms ease;
 }
 
 .item__inner {
   text-align: center;
   text-transform: uppercase;
-  -webkit-transition: color 400ms ease;
-          transition: color 400ms ease;
+  transition: color 400ms ease;
 }
 .item__inner p {
-  -webkit-transition: font-size 250ms ease, opacity 200ms linear;
-          transition: font-size 250ms ease, opacity 200ms linear;
+  transition: font-size 250ms ease, opacity 200ms linear;
 }
 
 .original {
@@ -914,8 +903,7 @@ footer a:hover {
   visibility: hidden;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: visibility 250ms ease, opacity 250ms ease;
-          transition: visibility 250ms ease, opacity 250ms ease;
+  transition: visibility 250ms ease, opacity 250ms ease;
 }
 .modal .modal__close {
   background-color: transparent;
@@ -926,8 +914,8 @@ footer a:hover {
   opacity: .8;
 }
 .modal .modal__inner {
-  -webkit-transition: -webkit-transform 200ms ease;
-          transition: transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
   -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
           transform: scale(0.5);
